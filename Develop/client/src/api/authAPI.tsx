@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const login = async (userInfo: UserLogin) => {
   // TODO: make a POST request to the login route
-  try {
+  try{
     const response = await axios.post('/auth/login', userInfo, {
       headers: {
         'Content-Type': 'aplication/json',
@@ -20,7 +20,7 @@ const login = async (userInfo: UserLogin) => {
       throw 'An unexpected erro occurred';
     }
   }
-};
+  };
 
 
 export { login };
